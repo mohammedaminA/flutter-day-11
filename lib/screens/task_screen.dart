@@ -3,9 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:todoey/widgets/tasks_list.dart';
 
 class TaskScreen extends StatelessWidget {
-  Widget buildBottomSheet(BuildContext context) => Container();
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -13,7 +10,7 @@ class TaskScreen extends StatelessWidget {
         backgroundColor: Colors.lightBlueAccent,
         child: Icon(Icons.add),
         onPressed: () {
-          showModalBottomSheet(context: context, builder: buildBottomSheet);
+          showModalBottomSheet(context: context, builder: (context) => Container() );
         },
       ),
       backgroundColor: Colors.lightBlueAccent,
