@@ -3,9 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:todoey/widgets/tasks_list.dart';
 
 class TaskScreen extends StatelessWidget {
-  Widget buildBottomSheet(BuildContext context) {
-    return Container();
-  }
+  Widget buildBottomSheet(BuildContext context) => Container();
 
 
   @override
