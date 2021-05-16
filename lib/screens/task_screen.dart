@@ -66,20 +66,15 @@ class TaskScreen extends StatelessWidget {
 }
 
 class TasksList extends StatelessWidget {
-  final String text;
-  TasksList({@required this.text});
-
   @override
   Widget build(BuildContext context) {
     return ListView(
       children: <Widget> [
-        ListTile(
-          title: Text(text),
-          trailing: Checkbox(
-            value: false,
-          ),
-        ),
+        TaskTile(),
+        TaskTile(),
+        TaskTile()
       ],
     );
   }
 }
+
