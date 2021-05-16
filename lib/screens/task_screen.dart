@@ -56,26 +56,30 @@ class TaskScreen extends StatelessWidget {
                   topRight: Radius.circular(20),
                 ),
               ),
-              child: ListView(
-                children: <Widget> [
-                  ListTile(
-                    title: Text( 'This is a task'),
-                    trailing: Checkbox(
-                      value: false,
-                    ),
-                  ),
-                  ListTile(
-                    title: Text( 'This is a task'),
-                    trailing: Checkbox(
-                      value: false,
-                    ),
-                  )
-                ],
-              ),
+              child: TasksList(),
             ),
           )
         ],
       ),
+    );
+  }
+}
+
+class TasksList extends StatelessWidget {
+  final String text;
+  TasksList({@required this.text});
+
+  @override
+  Widget build(BuildContext context) {
+    return ListView(
+      children: <Widget> [
+        ListTile(
+          title: Text(text),
+          trailing: Checkbox(
+            value: false,
+          ),
+        ),
+      ],
     );
   }
 }
