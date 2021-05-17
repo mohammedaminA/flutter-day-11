@@ -16,13 +16,8 @@ class TaskScreen extends StatelessWidget {
         child: Icon(Icons.add),
         onPressed: () {
           showModalBottomSheet(context: context, builder: (context) =>
-              AddTaskScreen((newTaskTitle) {
-                // setState(() {
-                //   Provider.of(context).add(Task(name:newTaskTitle));
-                // });
-                Navigator.pop(context);
-              }));
-        },
+              AddTaskScreen());
+        }
       ),
       backgroundColor: Colors.lightBlueAccent,
       body: Column(
