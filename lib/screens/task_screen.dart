@@ -12,8 +12,7 @@ class TaskScreen extends StatefulWidget {
 }
 
 class _TaskScreenState extends State<TaskScreen> {
-  List<Task> tasks = [
-  ];
+
 
   @override
   Widget build(BuildContext context) {
