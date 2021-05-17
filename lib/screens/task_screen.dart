@@ -2,18 +2,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:todoey/screens/add_task_screen.dart';
 import 'package:todoey/widgets/tasks_list.dart';
-import 'package:todoey/models/tasks.dart';
 import 'package:provider/provider.dart';
 import 'package:todoey/models/task_data.dart';
 
-class TaskScreen extends StatefulWidget {
-
-
-  @override
-  _TaskScreenState createState() => _TaskScreenState();
-}
-
-class _TaskScreenState extends State<TaskScreen> {
+class TaskScreen extends StatelessWidget {
 
 
   @override
@@ -79,7 +71,7 @@ class _TaskScreenState extends State<TaskScreen> {
                   topRight: Radius.circular(20),
                 ),
               ),
-              child: TasksList(list: Provider.of<TaskData>(context).tasks),
+              child: TasksList(),
             ),
           )
         ],
