@@ -41,8 +41,7 @@ class AddTaskScreen extends StatelessWidget {
               ),
               color: Colors.lightBlueAccent,
               onPressed: () {
-                final task = Task(name: newTaskTitle);
-                Provider.of<TaskData>(context).tasks.add(task);
+                ChangeNotifierProvider(create: (context) => TaskData().addTask(newTaskTitle));
                 Navigator.pop(context);
               },
             )
