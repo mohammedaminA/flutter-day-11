@@ -3,5 +3,8 @@ import 'package:todoey/models/tasks.dart';
 
 class TaskData extends ChangeNotifier {
   List<Task> tasks = [
+    Task(name: 'Buy some Bread'),
+    Task(name: 'Hit the gym'),
+    Task(name: 'Code a bit')
   ];
 }
