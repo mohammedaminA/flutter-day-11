@@ -15,6 +15,6 @@ class TaskData extends ChangeNotifier {
     notifyListeners();
   }
   UnmodifiableListView<Task> get tasks {
-    return _tasks;
+    return UnmodifiableListView(_tasks);
   }
 }
